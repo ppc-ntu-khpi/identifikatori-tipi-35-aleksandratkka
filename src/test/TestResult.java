@@ -1,12 +1,18 @@
 package test;
-
+/**
+ *
+ * @author asus
+ */
 import domain.Exercise;
 
 public class TestResult {
-
     public static void main(String[] args) {
-
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        byte n = 1;
+	byte m = 1;
+	 if(n > 0 && m > 0) {
+	System.out.println("Answer " + Exercise.recursion(n, m)); 
+        }
+        else{
+          System.out.println("Numbers are incorrect.");}
     }
 }
